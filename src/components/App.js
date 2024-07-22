@@ -4,8 +4,12 @@ import FollowersAnalysis from './FollowersAnalysis';
 function App() {
     return (
         <div className="app">
-            <h1>BackTrack - Instagram Follow Check</h1>
-            <FollowersAnalysis />
+            <header className="app-header">
+                <h1>BackTrack - Instagram Follow Check</h1>
+            </header>
+            <main className="main-content">
+                <FollowersAnalysis />
+            </main>
         </div>
     );
 }

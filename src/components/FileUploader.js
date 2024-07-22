@@ -14,7 +14,7 @@ function FileUploader({ label, onFileRead }) {
     };
 
     return (
-        <div>
+        <div className="file-input-container">
             <label>{label}</label>
             <input type="file" onChange={handleFileChange} />
         </div>

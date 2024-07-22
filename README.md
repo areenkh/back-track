@@ -9,8 +9,8 @@ Ever wondered why keeping track of your Instagram followers feels like a spy gam
 - **Quick and Efficient:** Forget about tedious copying and pasting. BackTrack automatically identifies non-followers with just a few clicks.
 - **Completely Free:** Enjoy this tool at no cost, enhancing your Instagram experience without any hidden fees.
 
-## How to Download Your Instagram Follower and Following Data
-To retrieve your Instagram followers and following data, follow these detailed steps:
+## How to use this app
+You need to retrieve your Instagram followers and following data from Instagram, to do that, follow these detailed steps:
 
 1. Navigate to Your Profile: Log in to your Instagram account and go to your profile.
 2. Access Settings and Activity: Click on the profile icon, then go to Settings and select Activity.

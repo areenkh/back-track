@@ -1,5 +1,5 @@
 {
-  "homepage": "https://areenkh.github.io/track-back",  
+  "homepage": "https://areenkh.github.io/back-track",  
   "dependencies": {
     "axios": "^1.7.2",
     "create-react-app": "^5.0.1",
@@ -9,7 +9,7 @@
     "react-router-dom": "^6.25.1",
     "react-scripts": "^5.0.1"
   },
-  "name": "trackback",
+  "name": "backtrack",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

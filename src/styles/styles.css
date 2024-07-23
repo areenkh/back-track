@@ -148,3 +148,31 @@ button:hover {
     padding: 8px 0;
     border-bottom: 1px solid #EEE; /* Light separator for each item */
 }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .app {
+        margin: 10px;
+        padding: 10px;
+    }
+    .app-header, .main-content, .file-input-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    .app {
+        width: 95%;
+        margin: 5px;
+    }
+    button, input[type="file"] {
+        padding: 8px;
+    }
+}

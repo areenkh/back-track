@@ -13,11 +13,12 @@ const UserCard = ({ username }) => {
         lineHeight: '40px', // Center the text vertically
     };
 
+    const profileUrl = `https://www.instagram.com/${username}/`;  // Construct the URL
+
     return (
-        <div className="user-card">
+        <div className="user-card" onClick={() => window.open(profileUrl, '_blank')}>
             <div style={avatarStyle}>{username[0].toUpperCase()}</div> {/* Display the first letter as avatar */}
             <div className="username">{username}</div>
-            <button className="follow-btn">Follow</button>
         </div>
     );
 };

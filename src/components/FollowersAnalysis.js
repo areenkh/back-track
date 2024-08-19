@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import FileUploader from './FileUploader';
 import CompareFollows from '../utils/CompareFollows';
+import UserCard from './UserCard'; 
 
 function FollowersAnalysis() {
     const [followers, setFollowers] = useState([]);
@@ -27,18 +28,6 @@ function FollowersAnalysis() {
         console.log(`${dataType} processed and set:`, processedData);  // Log processed data
     };
 
-    // useEffect(() => {
-    //     console.log('Current Followers:', followers);
-    //     console.log('Current Following:', following);
-    //     if (followers.length > 0 && following.length > 0) {
-    //         console.log('Both followers and following data available');
-    //         const results = CompareFollows(followers, following);
-    //         console.log('Not following back:', results);
-    //         setNonFollowers(results);
-    //     }
-    //     // console.log("heyyyyyy")
-    // }, [followers, following]);  // Ensures it runs when either state changes
-    
     useEffect(() => {
         if (followers.length > 0 && following.length > 0) {
             const results = CompareFollows(followers, following);
@@ -53,12 +42,17 @@ function FollowersAnalysis() {
             {nonFollowers.length > 0 && (
                 <div>
                     <h2>People not following you back:</h2>
-                    <ul>
+                    {/* <ul>
                     {nonFollowers.map((user, index) => {
                         console.log("Rendering user not following back:", user);  // Debug each rendered user
                         return <li key={index}>{user}</li>;
                     })}
-                </ul>
+                    </ul> */}
+                    <div>
+                    {nonFollowers.map((username, index) => (
+                        <UserCard key={index} username={username} /> // Using UserCard here
+                    ))}
+                    </div>
                 </div>
             )}
         </div>

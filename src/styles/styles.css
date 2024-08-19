@@ -170,6 +170,7 @@ button:hover {
     cursor: pointer;
     background-color: #f0f0f0;
     border-color: #3897f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .user-card .username {
@@ -192,6 +193,41 @@ button:hover {
 .user-card {
     animation: fadeInUp 0.5s ease-out;
 }
+
+.avatar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #666; /* Default background, will be overridden inline */
+    color: white;
+    text-align: center;
+    line-height: 50px; /* Adjust line-height to match height for vertical centering */
+    font-size: 1.2em; /* Larger text for initials */
+    margin-bottom: 10px; /* Space between avatar and username */
+}
+
+.username {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.load-more {
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.load-more:hover {
+    background-color: #2779bd;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

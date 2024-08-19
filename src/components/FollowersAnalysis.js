@@ -7,6 +7,7 @@ function FollowersAnalysis() {
     const [followers, setFollowers] = useState([]);
     const [following, setFollowing] = useState([]);
     const [nonFollowers, setNonFollowers] = useState([]);
+    const [visibleCount, setVisibleCount] = useState(10); // Only show 10 items initially
 
     // Assuming 'data' is the parsed JSON from the uploaded file
     const handleFileRead = (dataType, data) => {
@@ -35,6 +36,10 @@ function FollowersAnalysis() {
         }
     }, [followers, following]); 
 
+    const showMoreUsers = () => {
+        setVisibleCount(current => current + 10); // Increment the count to show more users
+    };
+
     return (
         <div>
             <FileUploader label="Upload Followers JSON" onFileRead={(data) => handleFileRead('followers', data)} />
@@ -42,17 +47,14 @@ function FollowersAnalysis() {
             {nonFollowers.length > 0 && (
                 <div>
                     <h2>People not following you back:</h2>
-                    {/* <ul>
-                    {nonFollowers.map((user, index) => {
-                        console.log("Rendering user not following back:", user);  // Debug each rendered user
-                        return <li key={index}>{user}</li>;
-                    })}
-                    </ul> */}
                     <div>
-                    {nonFollowers.map((username, index) => (
-                        <UserCard key={index} username={username} /> // Using UserCard here
-                    ))}
+                        {nonFollowers.slice(0, visibleCount).map((username, index) => (
+                            <UserCard key={index} username={username} />
+                        ))}
                     </div>
+                    {visibleCount < nonFollowers.length && (
+                        <button onClick={showMoreUsers} className="load-more">Load More</button> // Button to load more users
+                    )}
                 </div>
             )}
         </div>

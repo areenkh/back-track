@@ -18,7 +18,7 @@ const UserCard = ({ username }) => {
     return (
         <div className="user-card" onClick={() => window.open(profileUrl, '_blank')}>
             <div style={avatarStyle}>{username[0].toUpperCase()}</div> {/* Display the first letter as avatar */}
-            <div className="username">{username}</div>
+            <div className="username">@{username}</div>
         </div>
     );
 };

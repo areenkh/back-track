@@ -9,6 +9,7 @@ function App() {
             </header>
             <main className="main-content">
                 <FollowersAnalysis />
+                <Footer />
             </main>
         </div>
     );

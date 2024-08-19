@@ -228,6 +228,30 @@ button:hover {
     background-color: #2779bd;
 }
 
+.footer {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .content {
+    margin: auto;
+    font-size: 0.8em;
+}
+
+.footer a {
+    color: #0077cc;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

@@ -149,6 +149,49 @@ button:hover {
     border-bottom: 1px solid #EEE; /* Light separator for each item */
 }
 
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust size as needed */
+    gap: 10px;
+    padding: 10px;
+}
+
+.user-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px); /* subtle lift effect */
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-color: #3897f0;
+}
+
+.user-card .username {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-card {
+    animation: fadeInUp 0.5s ease-out;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

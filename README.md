@@ -24,3 +24,13 @@ You need to retrieve your Instagram followers and following data from Instagram,
 10. Click on Create files. The processing time will depend on the selected date range and it usually takes a while for the files to be processed.
 11. You will receive an email notification once your files are ready. 
 12. Once your files are ready and downloaded, you can use BackTrack to upload your files and analyze your followers and following.
+
+## Try It Out
+
+If you'd like to test the app without using your own data, you can download these example JSON files. These files represent fictional followers and followings lists to demonstrate how the app works. Note that these accounts do not correspond to real Instagram profiles.
+
+- [Download Example Followers JSON]([https://github.com/areenkh/back-track/blob/main/examples/e_followers.json])
+- [Download Example Following JSON]([https://github.com/areenkh/back-track/blob/main/examples/e_followings.json])
+
+Simply download these files and upload them to the app as prompted to see how it identifies which users are not following you back.
+

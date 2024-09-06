@@ -29,8 +29,8 @@ You need to retrieve your Instagram followers and following data from Instagram,
 
 If you'd like to test the app without using your own data, you can download these example JSON files. These files represent fictional followers and followings lists to demonstrate how the app works. Note that these accounts do not correspond to real Instagram profiles.
 
-- [Download Example Followers JSON]([https://github.com/areenkh/back-track/blob/main/examples/e_followers.json])
-- [Download Example Following JSON]([https://github.com/areenkh/back-track/blob/main/examples/e_followings.json])
+- [Download Example Followers JSON](https://github.com/areenkh/back-track/blob/main/examples/e_followers.json)
+- [Download Example Following JSON](https://github.com/areenkh/back-track/blob/main/examples/e_followings.json)
 
 Simply download these files and upload them to the app as prompted to see how it identifies which users are not following you back.
 

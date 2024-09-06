@@ -40,6 +40,8 @@ function FollowersAnalysis() {
     const handleGoBack = () => {
         setShowResults(false); // Hide results and show the file uploaders
         setNonFollowers([]);   // Clear the results
+        setFollowers([]);      // Clear followers data
+        setFollowing([]);      // Clear following data
         setVisibleCount(10);   // Reset visible count
     };
 
